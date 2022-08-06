@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;700&display=swap");
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #222;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 1;
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 23px;
+}
+
+h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.hero {
+  background-image: url("images/saopaulo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  animation: fadeIn 2s ease;
+  -webkit-animation: fadeIn 2s ease;
+}
+
+.hero-park {
+  background-image: url("images/park.jpg");
+}
+
+.hero-sports {
+  background-image: url("images/sports.jpg");
+}
+
+.hero-theatre {
+  background-image: url("images/theatre.jpg");
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 100%;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 25px;
+  color: #fff;
+}
+
+.activities-wrapper {
+  background-color: #e4f1e9;
+  padding: 25px;
+}
+
+.activities-wrapper > h2 {
+  padding-bottom: 25px;
+}
+
+.cards-activities {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.card-city {
+  width: 350px;
+}
+
+.card-city > h4 {
+  padding: 10px 0;
+}
+
+.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.rounded:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+  -webkit-transform: scale(1.05);
+  cursor: pointer;
+}
+
+.guide-wrapper {
+  padding: 75px 25px 35px;
+  text-align: start;
+}
+
+.card-guide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+  background-color: #e4e7f1;
+  border-radius: 15px;
+}
+
+.footer-wrapper {
+  text-align: start;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+}
+
+@keyframes fadeIn {
+  from {
+    top: 20%;
+    opacity: 0;
+  }
+  to {
+    top: 100;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    top: 20%;
+    opacity: 0;
+  }
+  to {
+    top: 100;
+    opacity: 1;
+  }
+}
